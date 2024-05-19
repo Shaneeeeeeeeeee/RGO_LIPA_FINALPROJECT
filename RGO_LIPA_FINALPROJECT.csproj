@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BCD4E4C-3889-4572-B385-33FD92FCD882}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RGO_LIPA_FINALPROJECT</RootNamespace>
+    <AssemblyName>RGO_LIPA_FINALPROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.4141.31969, Culture=neutral, PublicKeyToken=f3bc8f8c31beeb49, processorArchitecture=MSIL">
+      <HintPath>packages\BCrypt.Net.0.1.0\lib\net35\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\17.0_08ADC080\EXTENSIONS\WHZ5ZBQ3.4F5\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Sockets" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminAccounts.Designer.cs">
+      <DependentUpon>adminAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminAnnouncement.Designer.cs">
+      <DependentUpon>adminAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFAQ.Designer.cs">
+      <DependentUpon>adminFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFeedback.Designer.cs">
+      <DependentUpon>adminFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminMyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminMyAccount.Designer.cs">
+      <DependentUpon>adminMyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminOrders.Designer.cs">
+      <DependentUpon>adminOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPayments.Designer.cs">
+      <DependentUpon>adminPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminProducts.Designer.cs">
+      <DependentUpon>adminProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminStaffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminStaffs.Designer.cs">
+      <DependentUpon>adminStaffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminStudents.Designer.cs">
+      <DependentUpon>adminStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginforAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginforAdmin.Designer.cs">
+      <DependentUpon>loginforAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otherStaffsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otherStaffsView.Designer.cs">
+      <DependentUpon>otherStaffsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordPromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordPromptForm.Designer.cs">
+      <DependentUpon>PasswordPromptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RGO_LIPADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RGO_LIPADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SessionData.cs" />
+    <Compile Include="studentAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentAnnouncement.Designer.cs">
+      <DependentUpon>studentAnnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentChangePassword.Designer.cs">
+      <DependentUpon>studentChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentFAQ.Designer.cs">
+      <DependentUpon>studentFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentFeedback.Designer.cs">
+      <DependentUpon>studentFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentHome.Designer.cs">
+      <DependentUpon>studentHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentLogin.Designer.cs">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentOrders.Designer.cs">
+      <DependentUpon>studentOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPasswords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPasswords.Designer.cs">
+      <DependentUpon>viewPasswords.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminAccounts.resx">
+      <DependentUpon>adminAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminAnnouncement.resx">
+      <DependentUpon>adminAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFAQ.resx">
+      <DependentUpon>adminFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFeedback.resx">
+      <DependentUpon>adminFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminMyAccount.resx">
+      <DependentUpon>adminMyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminOrders.resx">
+      <DependentUpon>adminOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPayments.resx">
+      <DependentUpon>adminPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminProducts.resx">
+      <DependentUpon>adminProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminStaffs.resx">
+      <DependentUpon>adminStaffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminStudents.resx">
+      <DependentUpon>adminStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginforAdmin.resx">
+      <DependentUpon>loginforAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otherStaffsView.resx">
+      <DependentUpon>otherStaffsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordPromptForm.resx">
+      <DependentUpon>PasswordPromptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="studentAnnouncement.resx">
+      <DependentUpon>studentAnnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentChangePassword.resx">
+      <DependentUpon>studentChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentFAQ.resx">
+      <DependentUpon>studentFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentFeedback.resx">
+      <DependentUpon>studentFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentHome.resx">
+      <DependentUpon>studentHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentLogin.resx">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentOrders.resx">
+      <DependentUpon>studentOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPasswords.resx">
+      <DependentUpon>viewPasswords.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RGO_LIPADataSet.xsc">
+      <DependentUpon>RGO_LIPADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RGO_LIPADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RGO_LIPADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RGO_LIPADataSet.xss">
+      <DependentUpon>RGO_LIPADataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgbsu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgbsu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rgologo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rgologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bsuspartanlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bsulogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-users %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\study %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\study.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcement %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcement %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-page-option.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
